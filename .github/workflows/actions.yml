@@ -3,7 +3,7 @@
 # 이름 짓기
 name: Github Actions로 테스트 자동화하기
 
-on:push
+on: push
 
 jobs:
   test:
@@ -15,11 +15,11 @@ jobs:
       - name: Node.js 설치하기
         uses: actions/setup-node@v6
         with:
-          node-version: '22'
-          cache: 'npm'
+          node-version: "22"
+          cache: "npm"
 
       - name: 의존성(라이브러리) 설치
-        run : npm ci
+        run: npm ci
 
       - name: 테스트 실행하기
-        run : npm run test
+        run: npm run test
