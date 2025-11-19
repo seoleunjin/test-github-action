@@ -23,7 +23,7 @@ export default function SignupPage() {
     router.push("/auth/login");
   };
 
-  return (
+
     <>
       <h1>회원가입 페이지</h1>
       <form onSubmit={handleSubmit}>
