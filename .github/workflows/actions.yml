@@ -1,8 +1,6 @@
 # .github/workflows/actions.yml
 
-# 이름 짓기
 name: Github Actions로 테스트 자동화하기
-
 on: push
 
 jobs:
@@ -20,6 +18,7 @@ jobs:
 
       - name: 의존성(라이브러리) 설치
         run: npm ci
+        # package-lock.json이 있어야만 설치가 되게 만든다
 
       - name: 테스트 실행하기
         run: npm run test
