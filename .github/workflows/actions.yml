@@ -12,3 +12,8 @@ jobs:
     steps:
       - name: 첫 번째 작업
         run: echo "첫 번째 작업 실행 중"
+
+      - name: 여러 문장을 작성하기
+        run: |
+          echo "첫 번째 명령어"
+          echo "두 번째 명령어"
