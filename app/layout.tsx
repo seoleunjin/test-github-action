@@ -1,5 +1,6 @@
-import { AuthProvider } from "@/contexts/AuthContext";
-import "./globals.css";
+import { AuthProvider } from '@/contexts/AuthContext';
+import './globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function RootLayout({
   children,
@@ -10,6 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AuthProvider>{children}</AuthProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
